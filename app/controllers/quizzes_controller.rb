@@ -1,4 +1,10 @@
 class QuizzesController < ApplicationController
-	def index	
+	def index
+		@quizzes = Quiz.all
 	end
+
+	def new
+		@quiz = Quiz.new
+  	end
+
 end
